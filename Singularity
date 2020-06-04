@@ -1,11 +1,11 @@
 BootStrap: docker
-From: centos:centos7
+From: centos:centos7.7.1908
 
 %labels
-  Maintainer Matthew Flister
+  Maintainer Manuel Holtgrewe
 
 %help
-  This container runs the MATE desktop in CentOS 7.
+  This container runs the MATE desktop in CentOS 7.7
 
 %apprun vncserver
   exec vncserver "${@}"
