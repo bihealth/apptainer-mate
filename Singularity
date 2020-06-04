@@ -54,3 +54,6 @@ From: centos:centos7.7.1908
   mkdir -p /opt/websockify
   wget https://github.com/novnc/websockify/archive/v${WEBSOCKIFY_VERSION}.tar.gz -q -O - | tar xzf - -C /opt/websockify --strip-components=1
   rm -rf v*.tar.gz
+
+  # Remove mate-power-manager
+  yum erase -y mate-power-manager
